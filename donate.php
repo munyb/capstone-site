@@ -10,7 +10,8 @@
         <title>NEP-5</title>
 
         <!-- Google Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <!-- <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -68,21 +69,21 @@
         </div>
 
         <div class="container">
-            <div class="card text-black bg-light  w-100">
+            <div class="card text-black bg-light  w-200" style="margin: 10px;">
                <div class="card-body text-center">
-                   <h6 class="card-title">Neo and Gas</h6>
-                   <p class="card-text"><small>Price change over the last hour.</small></p>
+                   <h6 class="card-title"><strong>Neo and Gas</strong></h6>
+                   <p class="card-text">ARC5HmFgY8dPAo2ScYW4Dn6cqwJ1tiL7Ks</p>
                </div>
             </div>
 
-            <div class="card text-black bg-light  w-100">
+            <div class="card text-black bg-light  w-200" style="margin: 10px;">
                <div class="card-body text-center">
                    <h6 class="card-title">Bitcoin</h6>
                    <p class="card-text"><small>Price change over the last hour.</small></p>
                </div>
             </div>
 
-            <div class="card text-black bg-light  w-100">
+            <div class="card text-black bg-light  w-200" style="margin: 10px;">
                <div class="card-body text-center">
                    <h6 class="card-title">Ethereum</h6>
                    <p class="card-text"><small>Price change over the last hour.</small></p>

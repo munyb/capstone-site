@@ -10,7 +10,8 @@
         <title>NEP-5</title>
 
         <!-- Google Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <!-- <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -76,9 +77,9 @@
 
 
 
-        <section id = "table-fluid">
+        <section id = "table">
             <table class="table table-md table-hover">
-    	        <thead class="table-success">
+    	        <thead class="table">
 			        <tr>
 			            <td>Rank</td>
 			            <td>Global Rank</td>

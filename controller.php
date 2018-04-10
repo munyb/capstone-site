@@ -66,14 +66,14 @@
           '<tr>' .
 	          '<td id="rank">' . $nep5rank . '</td>' .
 		      '<td id="global">' . $grank . '</td>' .
-		      '<td id="name">  <a href="coinpage.php?coin=' . $id . '">' . $name . '</a></td>' .
-		      '<td id="symbol"> <img src="images/' .  $id . '.png" width="25">' . ' ' . $symbol . '</td>' .
+		      '<td id="name"> <img src="images/' .  $id . '.png" width="25"> <a href="coinpage.php?coin=' . $id . '">' . $name . '</a></td>' .
+		      '<td id="symbol">' . $symbol . '</td>' .
 		      '<td id="price_usd">' . "$". $price_usd . '</td>' .
 	          '<td id="supply">' . number_format($available_supply, 0) . '</td>' .
+              '<td id="marketcap">' . "$".number_format($market_cap_usd) . '</td>' .
 		      '<td id="1hr_change" class="' . $hr_color . '">' . floatval($percent_change_1h) . '%</td>' .
 	          '<td id="day_change" class="' . $day_color . '">' . floatval($percent_change_24h) . '%</td>' .
 	          '<td id="7day_change" class="' . $week_color . '">' . floatval($percent_change_7d) . '%</td>' .
-		      '<td id="marketcap">' . "$".number_format($market_cap_usd) . '</td>' .
        	  '</tr>';
 
 
