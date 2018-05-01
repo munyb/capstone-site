@@ -103,9 +103,9 @@
 
 
                 <div class="col-sm-3 hidden-xs hidden-sm text-left" style="margin-left: 30px;">
-                    <h6 class="footer-head">YEET</h6>
+                    <h6 class="footer-head"></h6>
                     <br>
-                    <small>BLAH BLAH BLAH</small>
+                    <small></small>
                 </div>
 
                 <div class="col-sm-3 hidden-xs hidden-sm text-left" style="margin-left: 30px;">
