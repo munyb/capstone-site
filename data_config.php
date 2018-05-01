@@ -7,7 +7,7 @@
 	<?php
 		include 'model.php';
 		// LIST OF EACH COIN'S ID AS SHOWN ON COINMARKETCAP.COM'S API
-		$coin_ids = array('neo', 'gas', 'deepbrain-chain', 'qlink', 'trinity-network-credit', 'red-pulse', 'zeepin', 'thekey', 'alphacat');
+		$coin_ids = array('neo', 'gas', 'deepbrain-chain', 'qlink', 'trinity-network-credit', 'red-pulse', 'zeepin', 'thekey', 'alphacat', 'ontology');
 
 
 		// LIST OF EACH COIN'S DATA POINT GIVEN FROM COINMARKETCAP.COM'S API
