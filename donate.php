@@ -51,7 +51,7 @@
         </nav>
 
 
-        <div class="jumbotron">
+        <div class="jumbotron" style="background-image: url(https://images.unsplash.com/photo-1519995451813-39e29e054914?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c0478ad15d7b018f8bb59f644f17184&auto=format&fit=crop&w=1650&q=80);" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
