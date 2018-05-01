@@ -87,10 +87,10 @@
 			            <td>Symbol</td>
 			            <td>Price (USD)</td>
 			            <td>Circulating Supply</td>
+                        <td>Market Cap (USD)</td>
 			            <td>1H</td>
 			            <td>1D</td>
 			            <td>1W</td>
-			            <td>Market Cap (USD)</td>
 			        </tr>
 			    </thead>
 			      	<tbody id="tableBody">
