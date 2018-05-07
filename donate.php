@@ -26,7 +26,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="home.php">
-                        <img src="images/header_icon.png" width="35px" href="home.php"></img>
+                        <img src="images/chasing-neo.png" width="125px" href="home.php"></img>
                     </a>
                 </div>
                 <ul class="nav navbar-nav">
@@ -112,7 +112,7 @@
                     <h6><strong>API</strong></h6>
                     <br>
                     <small>
-                        All data is generated using the api from the
+                        All data is generated using the
                         <a class="footer-link" href="https://coinmarketcap.com/" target="_blank" rel="nofollow">Coin Market Cap API</a>.
                         This is a non-commercial website provided free of charge with no available api for data retreival.
                     </small>
