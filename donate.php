@@ -79,14 +79,14 @@
             <div class="card text-black bg-light  w-200" style="margin: 10px;">
                <div class="card-body text-center">
                    <h6 class="card-title">Bitcoin</h6>
-                   <p class="card-text"><small>Price change over the last hour.</small></p>
+                   <p class="card-text"><small></small></p>
                </div>
             </div>
 
             <div class="card text-black bg-light  w-200" style="margin: 10px;">
                <div class="card-body text-center">
                    <h6 class="card-title">Ethereum</h6>
-                   <p class="card-text"><small>Price change over the last hour.</small></p>
+                   <p class="card-text"><small></small></p>
                </div>
             </div>
         </div>
