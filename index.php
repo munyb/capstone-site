@@ -39,7 +39,7 @@
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="home.php">
+                    <a class="navbar-brand" href="index.php">
                         <img src="images/chasing-neo.png" width="125px" href="home.php"></img>
                     </a>
                 </div>
