@@ -44,22 +44,24 @@
                     </a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li>NEP-5 Marketcap:
-                    <strong>
-                        <?php
-                        include "model.php";
-                        $theDBA = new DatabaseAdaptor();
-                        $result = $theDBA->getMARKET_INFO();
-                        echo "$" . number_format($result[0]['total_marketcap'])
-                        ?>
-                    </strong>
+                    <li>
+                        NEP-5 Marketcap:
+                        <strong>
+                            <?php
+                            include "model.php";
+                            $theDBA = new DatabaseAdaptor();
+                            $result = $theDBA->getMARKET_INFO();
+                            echo "$" . number_format($result[0]['total_marketcap'])
+                            ?>
+                        </strong>
 
-                     | NEO Dominance:
-                    <strong>
-                        <?php
-                        echo $result[0]['neo_dominance'] . '%';
-                        ?>
-                    </strong></li>
+                         | NEO Dominance:
+                        <strong>
+                            <?php
+                            echo $result[0]['neo_dominance'] . '%';
+                            ?>
+                        </strong>
+                    </li>
                 </ul>
             </div>
         </nav>
