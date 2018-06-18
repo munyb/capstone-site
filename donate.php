@@ -31,95 +31,67 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li>NEP-5 Marketcap:
-                    <strong>
-                        <?php
-                        include "model.php";
-                        $theDBA = new DatabaseAdaptor();
-                        $result = $theDBA->getMARKET_INFO();
-                        echo "$" . number_format($result[0]['total_marketcap'])
-                        ?>
-                    </strong>
+                        <strong>
+                            <?php
+                            include "model.php";
+                            $theDBA = new DatabaseAdaptor();
+                            $result = $theDBA->getMARKET_INFO();
+                            echo "$" . number_format($result[0]['total_marketcap'])
+                            ?>
+                        </strong>
 
-                     | NEO Dominance:
-                    <strong>
-                        <?php
-                        echo $result[0]['neo_dominance'] . '%';
-                        ?>
-                    </strong></li>
+                        | NEO Dominance:
+                        <strong>
+                            <?php
+                            echo $result[0]['neo_dominance'] . '%';
+                            ?>
+                        </strong>
+                    </li>
                 </ul>
             </div>
         </nav>
+        
 
+        <div class="donate-description text-center">
+            <h1>Donate</h1>
+            </br>
+            <p>
+                If you would like to donate to help contribute to development and costs of operation, below are accepted currency addresses. <br/>
+                This site is provided for free by a sole college developer so all contributions are appreciated!
+            </p>
 
-        <div class="jumbotron" style="background-image: url(https://images.unsplash.com/photo-1519995451813-39e29e054914?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c0478ad15d7b018f8bb59f644f17184&auto=format&fit=crop&w=1650&q=80);" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Donate</h1>
-                        </br>
-                        <p class="donate">
-                            If you would like to donate to help contribute to development and costs of operation, below are accepted currency addresses.
-                        </p>
-                        <p>
-                            This site is provided for free by a sole college developer so all contributions are appreciated!
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <div class="container">
-            <div class="card text-black bg-light  w-200" style="margin: 10px;">
-               <div class="card-body text-center">
-                   <h6 class="card-title"><strong>Neo and Gas</strong></h6>
-                   <p class="card-text">ARC5HmFgY8dPAo2ScYW4Dn6cqwJ1tiL7Ks</p>
-               </div>
+        
+        <div class="addresses">
+           <div class="address text-center">
+               <h6>Neo and Gas</h6>
+               <p class="neo-add"><small>ARC5HmFgY8dPAo2ScYW4Dn6cqwJ1tiL7Ks</small></p>
+           </div>
+        
+           <div class="address text-center">
+               <h6>Bitcoin</h6>
+               <p class="btc-add"><small>14xbk5z6MXTMQsF3ctm7Eg62LBW4TWpwtp</small></p>
+           </div>
+        
+           <div class="address text-center">
+               <h6 >Ethereum</h6>
+               <p class="eth-add"><small>0xef845a89759133473a7118a3faaf313d2a4e6eaf</small></p>
+           </div>
+        </div>
+            
+
+        <div class="footer text-center bg-info">
+            <div class="footer-links">
+                <a class="item" href="/about.html">About</a>
+                <a class="item" href="/donate.php">Donate</a>
+                <a class="item" href="/contact.php">Contact</a>
             </div>
 
-            <div class="card text-black bg-light  w-200" style="margin: 10px;">
-               <div class="card-body text-center">
-                   <h6 class="card-title">Bitcoin</h6>
-                   <p class="card-text"><small></small></p>
-               </div>
-            </div>
-
-            <div class="card text-black bg-light  w-200" style="margin: 10px;">
-               <div class="card-body text-center">
-                   <h6 class="card-title">Ethereum</h6>
-                   <p class="card-text"><small></small></p>
-               </div>
+            <div class="copy text-center">
+                Designed and developed by <a class="item" href="https://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
             </div>
         </div>
-
-        <footer class="container-fluid bg-success">
-            <div class="row">
-                <div class="col-sm-4 hidden-xs hidden-sm text-left" style="margin-left: 30px;">
-                    <h6><strong>Quick Links</strong></h6>
-                    <br>
-                    <p><small><a href="about.php">About</a></small></p>
-                    <p><small><a href="contact.php">Contact</a></small></p>
-                    <p><small><a href="donate.php">Donate</a></small></p>
-                </div>
-
-
-                <div class="col-sm-3 hidden-xs hidden-sm text-left" style="margin-left: 30px;">
-                    <h6 class="footer-head"></h6>
-                    <br>
-                    <small></small>
-                </div>
-
-                <div class="col-sm-3 hidden-xs hidden-sm text-left" style="margin-left: 30px;">
-                    <h6><strong>API</strong></h6>
-                    <br>
-                    <small>
-                        All data is generated using the
-                        <a class="footer-link" href="https://coinmarketcap.com/" target="_blank" rel="nofollow">Coin Market Cap API</a>.
-                        This is a non-commercial website provided free of charge with no available api for data retreival.
-                    </small>
-                </div>
-
-            </div>
-        </footer>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS, then FontAwesome -->

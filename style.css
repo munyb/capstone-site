@@ -8,14 +8,16 @@
  }
 
  body {
- 	background-width: 10px;
+ 	/*background-width: 10px;
  	display: flex;
  	flex-direction: column;
- 	margin: auto;
+ 	margin: auto;*/
 	font-family: 'Montserrat';
  }
 
- }
+
+
+ /* ---------- HEADER ----------*/
 
  .header{
  	float:left;
@@ -40,7 +42,9 @@
 .top-buffer {
 	padding-top:100px;
  }
-/*-------------------*/
+
+ /* ------------ MAIN ------------*/
+
 #main {
 	margin: 0px auto;
 	position: center;
@@ -48,6 +52,7 @@
 }
 
 
+/* ------------ INDEX.PHP MAIN (TABLE) ------------ */
 
  #table {
 	font-size: 10pt;
@@ -68,26 +73,6 @@ td img {
 	color: red;
 }
 
-footer {
-	width: 100%;
-	padding: 3%;
-	color: white;
-
-}
-
-.footer-head {
-	font-size: 11pt;
-}
-
-.footer-detail {
-	font-size: 9pt;
-}
-
-.address {
-	font-size: 12pt;
-	font-weight: bold;
-}
-
 a {
 	color: inherit;
 }
@@ -96,7 +81,59 @@ a:hover {
 	color: inherit;
 }
 
-
-.td:hover {
-	color: #D5D5D5; !important
+ /* ------------ DONATE.PHP MAIN ------------*/
+.donate-description {
+	padding: 70px;
+    background-image: url("https://images.unsplash.com/photo-1519995451813-39e29e054914?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c0478ad15d7b018f8bb59f644f17184&auto=format&fit=crop&w=1650&q=80");
 }
+
+.addresses {
+	padding: 20px;
+}
+
+.address {
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+.address h6 {
+	font-weight: bold;
+}
+
+.neo-add :hover {
+    color: #85e085;
+}
+
+.btc-add :hover {
+    color: #ffa64d;
+}
+.eth-add :hover {
+    color: #666666;
+}
+
+
+/* ------------ FOOTER ------------ */
+
+.footer-links {
+	padding: 40px;
+}
+
+.item {
+	padding: 5px;
+	color: #ffffff;
+}
+
+.item:hover {
+	text-decoration: none;
+    color: black;
+}
+
+
+.copy {
+	color: #ffffff;
+    padding: 10px;
+    font-size: 10pt;
+}
+
+
+

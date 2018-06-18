@@ -167,10 +167,10 @@
 					'discord' => $getSocial[0]['discord'],
 				);
 
-		$html = '<div class="jumbotron jumbotron-condensed jumbotron-fluid text-black" style="padding-bottom: 3%; width:auto; margin:0; background-color: #ffffff;">
+		$html = '<div class="jumbotron text-center jumbotron-condensed jumbotron-fluid text-black" style="padding-bottom: 3%; width:auto; margin:0; background-color: #ffffff;">
                      <div class="container text-center">
 					 	 <div class="row justify-content-center d-flex h-100">
-                     	 	 <div class="col-sm-3 text-right my-auto" style="margin: 0;">
+                     	 	 <div class="col-sm-4 text-right my-auto" style="margin: 0;">
 							 	 <img src="images/' .  $id . '.png" width="200px">
 							 </div>
 					 	 	 <div class="col-md-8 text-left my-auto" style="margin:0;">
@@ -185,6 +185,7 @@
 					 <div class="container text-center" style="margin-top: 30px;">
 					 	<h3>Connect with '. $symbol .'</h3>';
 		//<h3>Price: $' . $priceUSD . '<span style="color:' . $hrColor . '">  (<i class="' . $icon1h . '"></i>' . $percentChange1h .')</h3>
+
 		// ADD LINK AND IMAGE OF EACH SOCIAL MEDIA
 		foreach($social as $key => $value) {
 			$link = $social[$key];
@@ -196,8 +197,6 @@
 			}
 		}
 
-
-
         $html.=      	'</div>
                 	</div>
 				</div>
@@ -205,7 +204,6 @@
 
 				<div class="container-fluid" style="background-color: #eaecef; padding: 5%;">
 					 <div class="row align-items-stretch justify-content-center">
-
 
 						 	 <div class="card text-black bg-light  w-100" style="max-width: 18rem; margin-right:25px;">
 						 		 <div class="card-body text-center">
@@ -225,8 +223,6 @@
 							  	</div>
 							 </div>
 
-
-
 						 	 <div class="card text-black bg-light w-100" style="max-width: 18rem; margin-right:25px;">
 						 		 <div class="card-body text-center">
 									<h6 class="card-title">24 Hour Change</h6>
@@ -236,8 +232,6 @@
 									</p>
 							  	 </div>
 							 </div>
-
-
 
 						 	<div class="card text-black bg-light w-100" style="max-width: 18rem; margin-right:25px;">
 								<div class="card-body text-center">
@@ -254,10 +248,7 @@
 				</div>
 				';
 
-
-
 		echo $html;
-
 
 	}
 

@@ -11,6 +11,7 @@
 
         <!-- Google Fonts -->
         <!-- <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'> -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
@@ -44,8 +45,7 @@
                     </a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li>
-                        NEP-5 Marketcap:
+                    <li>NEP-5 Marketcap:
                         <strong>
                             <?php
                             include "model.php";
@@ -55,7 +55,7 @@
                             ?>
                         </strong>
 
-                         | NEO Dominance:
+                        | NEO Dominance:
                         <strong>
                             <?php
                             echo $result[0]['neo_dominance'] . '%';
@@ -66,22 +66,15 @@
             </div>
         </nav>
 
-
         <section id = "title">
-                <div class="container-fluid" style="background-color: #ffffff;">
-                    <div class="row">
-                        <div class="col-md-12 text-center text-black">
-                            <h3>NEO NEP-5 MARKET</h3>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center">
+                <h3>NEO NEP-5 MARKET</h3>
+            </div>
         </section>
-
-
 
         <section id = "table">
             <table class="table table-md table-hover">
-    	        <thead class="table">
+    	        <thead class="table-head">
 			        <tr>
 			            <td>Rank</td>
 			            <td>Global Rank</td>
@@ -100,35 +93,17 @@
       		</table>
         </section>
 
-        <footer class="container-fluid bg-success">
-            <div class="row">
-                <div class="col-sm-4 hidden-xs hidden-sm text-left" style="margin-left: 30px;">
-                    <h6><strong>Quick Links</strong></h6>
-                    <br>
-                    <p><small><a href="about.php">About</a></small></p>
-                    <p><small><a href="contact.php">Contact</a></small></p>
-                    <p><small><a href="donate.php">Donate</a></small></p>
-                </div>
-
-
-                <div class="col-sm-3 hidden-xs hidden-sm text-left" style="margin-left: 30px;">
-                    <h6 class="footer-head"></h6>
-                    <br>
-                    <small></small>
-                </div>
-
-                <div class="col-sm-3 hidden-xs hidden-sm text-center" style="margin-left: 30px;">
-                    <h6><strong>Data</strong></h6>
-                    <br>
-                    <small>
-                        All data is generated using the
-                        <a class="footer-link" href="https://coinmarketcap.com/" target="_blank" rel="nofollow">Coin Market Cap API</a>.
-                        This is a non-commercial website provided free of charge with no available api for data retreival.
-                    </small>
-                </div>
-
+        <div class="footer text-center bg-info">
+            <div class="footer-links">
+                <a class="item" href="about.php">About</a>
+                <a class="item" href="donate.php">Donate</a>
+                <a class="item" href="contact.php">Contact</a>
             </div>
-        </footer>
+
+            <div class="copy text-center">
+                Designed and developed by <a class="item" href="https://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
+            </div>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS, then FontAwesome -->

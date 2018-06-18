@@ -11,35 +11,31 @@
 
         <!-- Google Fonts -->
         <!-- <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'> -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="style.css" type = "text/css" rel = "stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script>
-        function loadCoin(str) {
+        function loadTable(str) {
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("main").innerHTML = this.responseText;
+                    document.getElementById("tableBody").innerHTML = this.responseText;
                 }
             }
-            xmlhttp.open("GET", "controller.php?coin=" + str, true);
+            xmlhttp.open("GET", "controller.php?action=" + str, true);
             xmlhttp.send();
 
         }
-
         </script>
-        <?php
-        $str = $_GET['coin'];
-        ?>
 
     </head>
 
 
-    <body onload="loadCoin('<?php echo($str) ?>')">
+    <body onload="loadTable('loadTable')">
 
         <nav class="navbar">
             <div class="container-fluid">
@@ -69,15 +65,16 @@
                 </ul>
             </div>
         </nav>
-
-
-        <section id = "main"></section>
         
+        <div class="jumbotron">
+            <h2>Coming Soon..</h2>
+        </div>
+
         <div class="footer text-center bg-info">
             <div class="footer-links">
-                <a class="item" href="/about.html">About</a>
+                <a class="item" href="about.html">About</a>
                 <a class="item" href="donate.php">Donate</a>
-                <a class="item" href="/contact.php">Contact</a>
+                <a class="item" href="contact.php">Contact</a>
             </div>
 
             <div class="copy text-center">
@@ -90,8 +87,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-
-
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     </body>
 </html>
