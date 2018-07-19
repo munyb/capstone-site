@@ -79,9 +79,11 @@
 
     }
 
+
 	if(isset($_GET['action']) && $_GET['action'] == 'loadTable') {
 	    echo($table_html);
     }
+
 	//------------- LOAD COINPAGE.PHP CONTENT --------------------------------->
 	if(isset($_GET['coin'])) {
 
@@ -251,5 +253,21 @@
 		echo $html;
 
 	}
+
+    if(isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $mailFrom = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        $mailTo = "brandon@chasingneo.website";
+        $headers = "From: " . $mailFrom;
+        $txt = "You have recieved an email from "  . $name . ".\n\n" . $message;
+
+
+        mail($mailTo, $subject, $txt, $headers);
+        header('Location: contact-sent.php');
+    }
+
 
 ?>

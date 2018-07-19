@@ -21,19 +21,19 @@
         <script>
         function loadCoin(str) {
             var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "controller.php?coin=" + str, true);
+            xmlhttp.send();
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("main").innerHTML = this.responseText;
                 }
             }
-            xmlhttp.open("GET", "controller.php?coin=" + str, true);
-            xmlhttp.send();
+
 
         }
-
         </script>
         <?php
-        $str = $_GET['coin'];
+            $str = $_GET['coin'];
         ?>
 
     </head>
@@ -72,16 +72,16 @@
 
 
         <section id = "main"></section>
-        
+
         <div class="footer text-center bg-info">
             <div class="footer-links">
-                <a class="item" href="/about.html">About</a>
+                <a class="item" href="about.php">About</a>
                 <a class="item" href="donate.php">Donate</a>
-                <a class="item" href="/contact.php">Contact</a>
+                <a class="item" href="contact.php">Contact</a>
             </div>
 
             <div class="copy text-center">
-                Designed and developed by <a class="item" href="https://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
+                Designed and developed by <a class="item" href="http://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
             </div>
         </div>
 

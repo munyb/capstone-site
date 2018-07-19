@@ -65,20 +65,20 @@
                 </ul>
             </div>
         </nav>
-        
+
         <div class="jumbotron">
             <h2>Coming Soon..</h2>
         </div>
 
         <div class="footer text-center bg-info">
             <div class="footer-links">
-                <a class="item" href="about.html">About</a>
+                <a class="item" href="about.php">About</a>
                 <a class="item" href="donate.php">Donate</a>
                 <a class="item" href="contact.php">Contact</a>
             </div>
 
             <div class="copy text-center">
-                Designed and developed by <a class="item" href="https://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
+                Designed and developed by <a class="item" href="http://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
             </div>
         </div>
 

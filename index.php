@@ -101,7 +101,7 @@
             </div>
 
             <div class="copy text-center">
-                Designed and developed by <a class="item" href="https://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
+                Designed and developed by <a class="item" href="http://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
             </div>
         </div>
 

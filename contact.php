@@ -17,26 +17,9 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="style.css" type = "text/css" rel = "stylesheet">
-
-        <script>
-        function loadTable(str) {
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("tableBody").innerHTML = this.responseText;
-                }
-            }
-            xmlhttp.open("GET", "controller.php?action=" + str, true);
-            xmlhttp.send();
-
-        }
-        </script>
-
     </head>
 
-
-    <body onload="loadTable('loadTable')">
-
+    <body>
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -65,20 +48,32 @@
                 </ul>
             </div>
         </nav>
-        
-        <div class="jumbotron">
-            <h2>Coming Soon..</h2>
+
+        <div class="contact-title text-center">
+            <h1>Contact</h1>
+        </div>
+
+        <div class="contact-div">
+            <div class="contact-wrapper">
+                <form class="contact-form" action="controller.php" method="post">
+                    <input name="name" placeholder="Your full name" type="text" required>
+                    <input name="email" placeholder="Your Email Address" type="email" required>
+                    <input name="subject" placeholder="Subject" type="text" required>
+                    <textarea name="message" placeholder="Type your message...." type="text" required></textarea>
+                    <button name="submit" type="submit">Send Message</button>
+                </form>
+            </div>
         </div>
 
         <div class="footer text-center bg-info">
             <div class="footer-links">
-                <a class="item" href="about.html">About</a>
+                <a class="item" href="about.php">About</a>
                 <a class="item" href="donate.php">Donate</a>
                 <a class="item" href="contact.php">Contact</a>
             </div>
 
             <div class="copy text-center">
-                Designed and developed by <a class="item" href="https://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
+                Designed and developed by <a class="item" href="http://brandonbynum.com">Brandon Bynum</a> <i class="far fa-copyright fa-1x"></i> 2018
             </div>
         </div>
 
